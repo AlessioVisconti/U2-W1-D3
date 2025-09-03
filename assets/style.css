@@ -1,0 +1,134 @@
+/* @media screen and (min-width: 576px) and (max-width: 768px) { */
+ul {
+  display: flex;
+  justify-content: space-around;
+  min-height: 8vh;
+  border-radius: 2em;
+  padding: unset;
+  list-style: none;
+  background-color: #fbf7e3;
+  align-items: center;
+}
+ul::after {
+  clear: both;
+}
+li {
+  justify-content: center;
+  display: flex;
+  width: 83px;
+  border-radius: 20px;
+  padding: 0.5em;
+  background: #f3df85;
+  color: #642909;
+}
+li > img {
+  width: 20px;
+}
+.ape {
+  color: #612406;
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 1em;
+  border-radius: 35px;
+  gap: 15px;
+}
+h1 {
+  margin-left: 1em;
+  margin-top: 1em;
+  font-family: sans-serif;
+  color: #742305;
+}
+/* Contenitore generale delle card */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Contenitore interno fatti 2 con 2 card dentro l'uno così che non ti ritrovi con 4 card in linea ma solo 2*/
+.container1 {
+  display: flex;
+  gap: 2em;
+}
+
+/* Card */
+.card {
+  background-color: #fef7e2;
+  border-radius: 28%;
+  overflow: hidden;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra il button */
+}
+
+/* Immagine della card */
+.card img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 10px;
+}
+
+/* Riga superiore con h2+p a sinistra e price a destra */
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  align-items: baseline; /* allinea h2 e price ma se volessi metterli in mezzo?*/
+  margin-bottom: 5px;
+}
+
+.top-left h2 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #612406;
+}
+
+.top-left p {
+  margin: 2px 0 0 0;
+  color: #622609;
+}
+
+.price {
+  font-weight: bold;
+  color: #642909;
+  font-size: 1em;
+}
+
+/* Button */
+.card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f3df85;
+  color: #642909;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+/* ultima parte lorem */
+.last-card {
+  background-color: #fef7e2;
+  padding: 15px;
+  border-radius: 20px;
+}
+.last-card h3 {
+  margin-top: 0;
+  color: #612406;
+}
+.last-card p {
+  color: #622609;
+}
+.last-card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .last-card {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2em;
+  }
+}
